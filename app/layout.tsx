@@ -1,10 +1,19 @@
 import type { Metadata, Viewport } from "next";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Header } from "@/components/Header";
 
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mono",
+});
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kiracloud.me"),
+  metadataBase: new URL("https://api.kiracloud.me"),
   title: "Kiracloud API - Powerful REST API Platform",
   description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
   keywords: ["API", "download", "spotify", "youtube", "tiktok", "instagram", "lyrics", "REST API"],
@@ -27,18 +36,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kiracloud API - Powerful REST API Platform",
     description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
-    url: "https://kiracloud.me",
+    url: "https://api.kiracloud.me",
     siteName: "Kiracloud API",
     images: [
       {
-        url: "https://kiracloud.me/api/og",
+        url: "/api/og",
         width: 1280,
         height: 640,
         alt: "Kiracloud API - Powerful REST API Platform",
         type: "image/png",
       },
       {
-        url: "https://kiracloud.me/api/og",
+        url: "/api/og",
         width: 800,
         height: 600,
         alt: "Kiracloud API",
@@ -52,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kiracloud API - Powerful REST API Platform",
     description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
-    images: ["https://kiracloud.me/api/og"],
+    images: ["/api/og"],
   },
   icons: {
     icon: [
@@ -106,9 +115,6 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" />
         <script
           dangerouslySetInnerHTML={{
@@ -124,7 +130,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body style={{ fontFamily: "var(--font-mono)", background: "var(--bg)", color: "var(--text)", minHeight: "100vh" }}>
+      <body className={spaceMono.variable} style={{ fontFamily: "var(--font-mono)", background: "var(--bg)", color: "var(--text)", minHeight: "100vh" }}>
         <ThemeProvider>
           <Header />
           {children}
