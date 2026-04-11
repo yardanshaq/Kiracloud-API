@@ -1,38 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-      .title { font-family: 'Inter', sans-serif; font-size: 72px; font-weight: 700; fill: #ffffff; }
-      .subtitle { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 400; fill: #a0a9c9; }
-      .accent { fill: #00bc96; }
-      .footer { font-family: 'Inter', sans-serif; font-size: 18px; fill: #a0a9c9; }
-    </style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');</style>
+    <filter id="sh">
+      <feDropShadow dx="8" dy="8" stdDeviation="0" flood-color="#222" flood-opacity="1"/>
+    </filter>
   </defs>
-  
-  <!-- Background -->
-  <rect width="1280" height="640" fill="#0a0e27"/>
-  
-  <!-- Gradient overlay circles for visual interest -->
-  <circle cx="1100" cy="100" r="300" fill="#00bc96" opacity="0.1"/>
-  <circle cx="200" cy="550" r="250" fill="#00bc96" opacity="0.05"/>
-  
-  <!-- Logo box -->
-  <rect x="60" y="60" width="100" height="100" rx="20" fill="#00bc96"/>
-  <text x="110" y="145" text-anchor="middle" class="title" font-size="80">K</text>
-  
-  <!-- Main title -->
-  <text x="60" y="250" class="title">Kiracloud<tspan class="accent">.</tspan>API</text>
-  
-  <!-- Subtitle -->
-  <text x="60" y="310" class="subtitle">Powerful REST API Platform</text>
-  
-  <!-- Description -->
-  <text x="60" y="370" class="subtitle" font-size="22">Downloaders, search tools, and system utilities.</text>
-  <text x="60" y="405" class="subtitle" font-size="22">Simple to integrate, powerful to build with.</text>
-  
-  <!-- Features -->
-  <text x="60" y="480" class="footer">✓ YouTube  ✓ Spotify  ✓ TikTok  ✓ Instagram  ✓ Lyrics Search</text>
-  
-  <!-- Footer domain -->
-  <text x="1220" y="620" text-anchor="end" class="footer" font-weight="600">api.kiracloud.me</text>
+  <rect width="1280" height="640" fill="#000"/>
+  <text x="640" y="405"
+    text-anchor="middle"
+    font-family="'Poppins','FreeSans',sans-serif"
+    font-size="200" font-weight="900" font-style="italic"
+    fill="#fff" filter="url(#sh)"
+    paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round"
+  >Kiracloud</text>
 </svg>

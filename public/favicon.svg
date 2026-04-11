@@ -1,1 +1,13 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='72' font-size='80' font-weight='700' fill='#ffffff' text-anchor='middle' font-family='Courier New, Monaco, monospace' letter-spacing='-3'>K</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');</style>
+  </defs>
+  <rect width="512" height="512" fill="#fff"/>
+  <text x="256" y="388"
+    text-anchor="middle"
+    font-family="'Poppins','FreeSans',sans-serif"
+    font-size="390" font-weight="800" font-style="normal"
+    fill="#000"
+    paint-order="stroke" stroke="#000" stroke-width="6" stroke-linejoin="round"
+  >K</text>
+</svg>

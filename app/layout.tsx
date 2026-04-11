@@ -40,11 +40,11 @@ export const metadata: Metadata = {
     siteName: "Kiracloud API",
     images: [
       {
-        url: "https://api.kiracloud.me/og.svg",
+        url: "https://api.kiracloud.me/og.png",
         width: 1280,
         height: 640,
         alt: "Kiracloud API - Powerful REST API Platform",
-        type: "image/svg+xml",
+        type: "image/png",
       }
     ],
     locale: "en_US",
@@ -54,11 +54,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kiracloud API - Powerful REST API Platform",
     description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
-    images: ["https://api.kiracloud.me/og.svg"],
+    images: ["https://api.kiracloud.me/og.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    apple: "/apple-touch-icon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   alternates: {
     canonical: "/",
