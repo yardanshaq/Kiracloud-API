@@ -38,6 +38,15 @@ export const metadata: Metadata = {
     description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
     url: "https://api.kiracloud.me",
     siteName: "Kiracloud API",
+    images: [
+      {
+        url: "https://api.kiracloud.me/og.svg",
+        width: 1280,
+        height: 640,
+        alt: "Kiracloud API - Powerful REST API Platform",
+        type: "image/svg+xml",
+      }
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -45,6 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kiracloud API - Powerful REST API Platform",
     description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
+    images: ["https://api.kiracloud.me/og.svg"],
   },
   icons: {
     icon: "/favicon.svg",
