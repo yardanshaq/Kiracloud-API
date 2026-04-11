@@ -29,6 +29,10 @@ export async function GET(req: NextRequest) {
             throw new Error("Gagal mengambil data dari server");
         }
 
+        if (typeof data.data !== 'string') {
+            throw new Error(`Expected HTML string, got ${typeof data.data}: ${JSON.stringify(data.data).slice(0, 100)}`);
+        }
+
         const $ = cheerio.load(data.data);
         const title = $('h3').text().trim() || "TikTok Video";
         const thumbnail = $('.thumbnail img').attr('src') || "";

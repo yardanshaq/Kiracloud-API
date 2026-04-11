@@ -72,7 +72,7 @@ export const endpoints: EndpointConfig[] = [
   {
     id: "api-info",
     name: "API Status",
-    path: "/api/info",
+    path: "/info",
     method: "GET",
     tag: "System",
     description: "Check API status, uptime, and basic usage statistics.",
@@ -82,7 +82,7 @@ export const endpoints: EndpointConfig[] = [
   {
     id: "system-info",
     name: "System Info",
-    path: "/api/system",
+    path: "/system",
     method: "GET",
     tag: "System",
     description: "Retrieve server system information: OS, CPU, memory, and Node.js version.",
