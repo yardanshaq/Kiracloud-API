@@ -40,19 +40,12 @@ export const metadata: Metadata = {
     siteName: "Kiracloud API",
     images: [
       {
-        url: "/api/og",
+        url: "https://api.kiracloud.me/og.png",
         width: 1280,
         height: 640,
         alt: "Kiracloud API - Powerful REST API Platform",
         type: "image/png",
-      },
-      {
-        url: "/api/og",
-        width: 800,
-        height: 600,
-        alt: "Kiracloud API",
-        type: "image/png",
-      },
+      }
     ],
     locale: "en_US",
     type: "website",
@@ -61,32 +54,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kiracloud API - Powerful REST API Platform",
     description: "A seamless, high-performance REST API built for developers. Zero authentication required — just send a request and power up your applications instantly.",
-    images: ["/api/og"],
+    images: ["https://api.kiracloud.me/og.png"],
   },
   icons: {
-    icon: [
-      {
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='72' font-size='80' font-weight='700' fill='%23ffffff' text-anchor='middle' font-family='Courier%20New%2C%20Monaco%2C%20monospace' letter-spacing='-3'%3EK%3C/text%3E%3C/svg%3E",
-        sizes: "any",
-        type: "image/svg+xml",
-      },
-      {
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='26' font-size='28' font-weight='700' fill='%23ffffff' text-anchor='middle' font-family='Courier%20New%2C%20Monaco%2C%20monospace' letter-spacing='-1'%3EK%3C/text%3E%3C/svg%3E",
-        sizes: "32x32",
-        type: "image/svg+xml",
-      },
-      {
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='13' font-size='14' font-weight='700' fill='%23ffffff' text-anchor='middle' font-family='Courier%20New%2C%20Monaco%2C%20monospace' letter-spacing='-0.5'%3EK%3C/text%3E%3C/svg%3E",
-        sizes: "16x16",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: [
-      {
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%2300bc96' rx='40'/%3E%3Ctext x='90' y='140' font-size='120' font-weight='700' fill='%23ffffff' text-anchor='middle' font-family='Courier%20New%2C%20Monaco%2C%20monospace' letter-spacing='-2'%3EK%3C/text%3E%3C/svg%3E",
-        sizes: "180x180",
-      },
-    ],
+    icon: "/favicon.svg",
+    apple: "/apple-touch-icon.svg",
   },
   alternates: {
     canonical: "/",
