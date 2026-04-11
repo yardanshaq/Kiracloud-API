@@ -10,6 +10,8 @@ export type EndpointConfig = {
   extraParams?: { name: string; description: string; example: string; required: boolean }[];
 };
 
+export const getApiPath = (path: string) => `/api${path}`;
+
 export const endpoints: EndpointConfig[] = [
   // ── Downloader ──────────────────────────────────────────────────────────
   {

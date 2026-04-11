@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { endpoints, tags, type Tag, type EndpointConfig } from "@/config/endpoints";
+import { endpoints, tags, type Tag, type EndpointConfig, getApiPath } from "@/config/endpoints";
 
 /* ─── Tag color map ────────────────────────────────────────────────────── */
 const tagColors: Record<string, string> = {
@@ -103,11 +103,11 @@ function EndpointCard({ ep }: { ep: EndpointConfig }) {
       .filter(Boolean)
       .join("&");
 
-    const full = `${window.location.origin}${ep.path}${qs ? "?" + qs : ""}`;
+    const full = `${window.location.origin}${getApiPath(ep.path)}${qs ? "?" + qs : ""}`;
     setReqUrl(full);
     const t0 = Date.now();
     try {
-      const r = await fetch(`${ep.path}${qs ? "?" + qs : ""}`);
+      const r = await fetch(`${getApiPath(ep.path)}${qs ? "?" + qs : ""}`);
       const d = await r.json();
       setResponse(d);
     } catch (e: unknown) {
